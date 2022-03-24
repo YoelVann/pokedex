@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./pokedex.css">
+</head>
+<body>
+    <article class="pokedex">
+
+        <section class="pokedex-left">
+            <div class="led-lights">
+                <div class="led-blue"></div>
+                <div class="led-red"></div>
+                <div class="led-yellow"></div>
+                <div class="led-green"></div>
+            </div>
+
+            <div class="display">
+                <h4 id="pokename-title"></h4>
+                <img class="pokemon-img" src="./assets/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+               
+            </div>
+
+            <div class="led-lights-bottom">
+                <div class="led-blue-bottom"></div>
+                <div class="led-green-bottom"></div>
+                <div class="led-yellow-bottom"></div>
+            </div>
+
+            <div class="search-section">
+                <input class="pokemon-input" type="text" placeholder="Tap some Pokémon..." id="pokeName" name="pokeName">
+                <button class="search-btn" onclick="fetchPokemon()">Search</button>
+            </div>
+        </section>
+
+        <section class="pokedex-right">
+            <h4 class="pokemon-details">Pokemon Details </h4>
+            <div class="display-stats">
+                    <div class="stats">
+                        <ul>
+                            <li >Hp: <p class="stat">0</p></li>
+                            <li >Attack: <p class="stat">0</p></li>
+                            <li >Defense: <p class="stat">0</p></li>
+                            <li >Special Attack: <p class="stat">0</p> </li>
+                            <li >Special Defense: <p class="stat">0</p></li>
+                            <li >Speed: <p class="stat">0</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="types-list">
+                        <p>Pokémon Type:</p>
+                        <ul id="pokemon-type">
+                            <li class="type"></li>
+                            <li class="type"></li>
+                        </ul>
+                    </div> 
+            </div>
+        </section>
+    </article>
+   
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
